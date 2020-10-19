@@ -62,7 +62,6 @@ class LearningRateMultiplier(Optimizer):
         self._optimizer.decay = base_decay
         updates.extend(self._optimizer.get_updates(loss, base_decay_params))
 
-
         return updates
 
     def get_config(self):
