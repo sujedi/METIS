@@ -14,7 +14,7 @@ class TripletDataset(Dataset):
     a positive item and a negative item, respectively.
 
     Args:
-        S_train (list of list): training pair 
+        S_train (list of lists): training pairs 
         item_size (int): total number of item.
     """
     def __init__(self, S_train, item_size):
