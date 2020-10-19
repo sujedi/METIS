@@ -47,8 +47,6 @@ class LearningRateMultiplier(Optimizer):
         self._optimizer.lr = base_lr
         updates.extend(self._optimizer.get_updates(loss, base_lr_params))
 
-
-
         mult_decay_params = {p: self._get_multiplier(p) for p in params
                           if self._get_multiplier(p)}
         base_decay_params = [p for p in params if self._get_multiplier(p) is None]
