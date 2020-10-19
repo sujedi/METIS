@@ -10,8 +10,8 @@ from torch.utils.data import Dataset, DataLoader
 class TripletDataset(Dataset):
     """Dataset for BPR model.
 
-    BPR model require triplet (u, i, j) which represent user,
-    positive item and negative item, respectively.
+    BPR model require triplet (u, i, j) which represent a user,
+    a positive item and a negative item, respectively.
 
     Args:
         S_train (list of list): training pair 
