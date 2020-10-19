@@ -9,6 +9,7 @@ class LearningRateMultiplier(Optimizer):
     learning rate of the optimizer.
     Note: This is a wrapper and does not implement any
     optimization algorithm.
+    
     # Arguments
         optimizer: An optimizer class to be wrapped.
         lr_multipliers: Dictionary of the per layer factors. For
